@@ -43,7 +43,7 @@
             <connections>
                 <outlet property="imageView" destination="EJr-on-CnC" id="ivY-XY-3hb"/>
             </connections>
-            <point key="canvasLocation" x="193" y="17"/>
+            <point key="canvasLocation" x="191.6030534351145" y="16.549295774647888"/>
         </collectionViewCell>
     </objects>
 </document>

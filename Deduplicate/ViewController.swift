@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     
     func initSetting(){
         buttonViewHeight.constant  = contentView.layer.frame.height
-        addButton.setTitle("Add Image", for: .normal)
+        addButton.setTitle("Add ScreenShots", for: .normal)
         deduplicateButton.isEnabled = false
     }
     
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         if segue.identifier == "goResult" {
             let vc = segue.destination as! ResultViewController
         
-            vc.dedupImage  = combineImagesVertically(imageArray)
+            vc.dedupImage  = combineImagesVertically(imageArray)  
         }
     }
     
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
             }
             else {
                 if self.imageArray.count == 1 {
-                    self.addButton.setTitle("Add more Image", for: .normal)
+                    self.addButton.setTitle("Add More", for: .normal)
                 } else {
                     self.deduplicateButton.isEnabled = true
                 }
